@@ -1,0 +1,39 @@
+a = 1;
+
+str = "MyString";
+
+isRun = false;
+
+student = {
+	name = "asd",
+	age = "32",
+	study = function ( ... )
+		-- body
+		print("study");
+	end
+};
+
+d = {
+	f1 = 12, f2 = 34, 
+	1, 2, 3,
+	add = function(self, a, b) 
+	   print('d.add called')
+	   return a + b 
+	end
+};
+
+fun = function()
+	print("i am e");
+end;
+
+fun1 = function(a, b, c)
+	a = 10;
+	b = 20;
+	c = 30;
+	return a,b,c;
+end;
+
+fun2 = function()
+	print("this is return action function")
+	return fun;
+end
